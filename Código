@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+public class Iterables {
+
+	public static void main(String[] args) {
+		
+		ArrayList <Integer> lista = new ArrayList <Integer> ();
+		
+		lista.add(5);
+		lista.add(7);
+		lista.add(21);
+		
+		for (Iterator <Integer> it = lista.iterator(); it.hasNext();) {
+			Integer i = it.next();
+			System.out.println(i);
+		}
+		
+		Iterator <Integer> it = lista.iterator();
+		it.next();
+		it.remove();
+		
+		    System.out.println(lista);
+	}
+
+}
